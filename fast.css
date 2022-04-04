@@ -1,4 +1,18 @@
 .nav {
     display: flex;
-    width: 100%;
+    text-align: center;
+    background-color: rgb(50, 109, 148);
+    justify-content: space-between;
+    list-style: none;
+}
+.center{
+    margin-top: 30px;
+}
+.center_left{
+    margin-top: 30px;
+    padding-right: 12px;
+}
+.center_right{
+    margin-top: 30px;
+    padding-left: 12px;
 }
