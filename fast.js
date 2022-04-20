@@ -27,3 +27,17 @@ let area = {
 }
 let nextArea = area.area1;
 let buttonPick = document.getElementById("buttonPick");
+
+if (nameGate == false) {
+    let textName = gameData['nameInput'].value;
+    let output = document.getElementById('output');
+    player.name = textName;
+    nameGate = true;
+}
+
+output.innerHTML = `${construction(nextArea)}`;
+console.log(player);
+event.preventDefault();
+
+//run
+gamePage.addEventListener(`submit`, gameOutput);
