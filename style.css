@@ -29,8 +29,7 @@
     width: 75%;
 }
 
-#gdiv,
-form {}
+#gdiv, form {}
 
 #rdiv {
     background-color: rgb(133, 133, 202);
@@ -40,6 +39,35 @@ form {}
 .choices {
     display: flex;
     background-color: aquamarine;
-    justify-content: space-between;
-    height: 100px;
+    justify-content: space-around;
+}
+
+.btn{
+    margin: 12px;
+	box-shadow: 5px 5px 5px -1px #08baf5;
+	background-color:#ffffff;
+	border-radius:15px;
+	border:3px solid #babad4;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-weight:bold;
+	padding:12px;
+	text-decoration:none;
+    text-align: center;
+    width: 100px;
+
+}
+
+.btn:hover {
+	background-color:#bab1ba;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.choicesPicked{
+    background-color: #b53db5;
+
 }
