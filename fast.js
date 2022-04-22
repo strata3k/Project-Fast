@@ -24,10 +24,34 @@ let area = {
         ]
     }
 
-}
-let nextArea = area.area1;
-let buttonPick = document.getElementById("buttonPick");
+};
 
+
+let nextArea = area.area;
+let buttonPick = document.getElementById("buttonPick");
+let nameGate = false;
+
+function swithchArea(place) {
+    nextArea = place;
+}
+
+function construct(place) {
+    let message = '<p name="nameInput"> </p><p>' + place.text + '</p>'
+    for (i = 0; i < message.length-6; i++) {
+        message = message.replace("Player", player.name);
+    }
+  }
+return message;
+}
+
+
+//allows site to run
+let gameSite = document.getElementById('game'),
+    gameOutput = gameSite.elements;
+console.log(gameOutput);
+
+
+function gameOutput(event) {
 if (nameGate == false) {
     let textName = gameData['nameInput'].value;
     let output = document.getElementById('output');
@@ -38,6 +62,7 @@ if (nameGate == false) {
 output.innerHTML = `${construction(nextArea)}`;
 console.log(player);
 event.preventDefault();
+}
 
 //run
 gamePage.addEventListener(`submit`, gameOutput);
